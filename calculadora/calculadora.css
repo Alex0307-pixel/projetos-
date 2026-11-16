@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e8eef7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculadora {
+    background: white;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+h3 {
+    text-align: center;
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.formula {
+    background: #eff6ff;
+    color: #1d4ed8;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    line-height: 2;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #334155;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button.limpar {
+    background: #7c3aed;
+}
+
+button.limpar:hover {
+    background: #6d28d9;
+}
+
+.resultado {
+    background: #f1f5f9;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #1e293b;
+}
+
+.resultado h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.resultado p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}

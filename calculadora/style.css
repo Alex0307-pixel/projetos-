@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e8eef7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+.calculadora,
+.bhaskara {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    margin-bottom: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+#tela {
+    width: 100%;
+    height: 75px;
+    background: #f1f5f9;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: right;
+    font-size: 32px;
+    color: #1e293b;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    background: #e2e8f0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    filter: brightness(0.92);
+    transform: scale(0.98);
+}
+
+.operador {
+    background: #2563eb;
+    color: white;
+}
+
+.especial {
+    background: #cbd5e1;
+    color: #1e293b;
+}
+
+.igual {
+    background: #7c3aed;
+    color: white;
+}
+
+.formula {
+    background: #eff6ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #1d4ed8;
+    font-size: 19px;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-weight: bold;
+}
+
+.bhaskara input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.calcular {
+    width: 100%;
+    background: #7c3aed;
+    color: white;
+    font-size: 16px;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 18px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    color: #1e293b;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 400px) {
+    .calculadora,
+    .bhaskara {
+        padding: 17px;
+    }
+
+    button {
+        height: 52px;
+    }
+}

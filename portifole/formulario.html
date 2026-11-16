@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição Corrida</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <h1>🏃 Inscrição para Corrida</h1>
+            <p class="subtitulo">Preencha seus dados para participar do evento.</p>
+
+            <form>
+
+                <div class="grupo">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Digite seu nome">
+                </div>
+
+                <div class="grupo">
+                    <label>Sobrenome</label>
+                    <input type="text" placeholder="Digite seu sobrenome">
+                </div>
+
+                <div class="grupo">
+                    <label>Idade</label>
+                    <input type="number" placeholder="Digite sua idade">
+                </div>
+
+                <div class="grupo">
+                    <label>CPF</label>
+                    <input type="text" placeholder="000.000.000-00">
+                </div>
+
+                <div class="grupo">
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="grupo">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="exemplo@email.com">
+                </div>
+
+                <div class="grupo">
+                    <label>Gênero</label>
+                    <select>
+                        <option>Selecione</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+
+                <div class="opcoes">
+                    <h3>Distância da Corrida</h3>
+
+                    <label>
+                        <input type="radio" name="distancia">
+                        5 km
+                    </label>
+
+                    <label>
+                        <input type="radio" name="distancia">
+                        10 km
+                    </label>
+
+                    <label>
+                        <input type="radio" name="distancia">
+                        15 km
+                    </label>
+                </div>
+
+                <div class="opcoes">
+                    <h3>Itens Desejados</h3>
+
+                    <label>
+                        <input type="checkbox">
+                        Camiseta
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Medalha
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Banana
+                    </label>
+                </div>
+
+                <button type="submit">
+                    Confirmar Inscrição
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

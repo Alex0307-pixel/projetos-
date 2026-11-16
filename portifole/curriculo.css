@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    min-height:100vh;
+    padding:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.curriculo{
+    width:100%;
+    max-width:1100px;
+    background:#fff;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+    display:grid;
+    grid-template-columns:320px 1fr;
+}
+
+.sidebar{
+    background:linear-gradient(180deg,#0f172a,#1e40af);
+    color:#fff;
+    padding:40px 25px;
+    text-align:center;
+}
+
+.foto{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid #60a5fa;
+    object-fit:cover;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.foto:hover{
+    transform:scale(1.05);
+}
+
+.sidebar h1{
+    font-size:28px;
+}
+
+.sidebar h3{
+    color:#bfdbfe;
+    margin-top:10px;
+}
+
+.info{
+    margin-top:30px;
+    text-align:left;
+}
+
+.info h2{
+    color:#93c5fd;
+    margin-bottom:15px;
+    border-bottom:2px solid rgba(255,255,255,.3);
+    padding-bottom:5px;
+}
+
+.info p{
+    margin-bottom:10px;
+}
+
+.conteudo{
+    padding:40px;
+}
+
+.secao{
+    margin-bottom:35px;
+}
+
+.secao h2{
+    color:#1d4ed8;
+    border-bottom:3px solid #60a5fa;
+    margin-bottom:15px;
+    padding-bottom:5px;
+}
+
+.secao p{
+    color:#444;
+    line-height:1.8;
+}
+
+.lista{
+    list-style:none;
+}
+
+.lista li{
+    background:#eff6ff;
+    padding:12px;
+    margin-bottom:10px;
+    border-left:5px solid #2563eb;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.lista li:hover{
+    background:#dbeafe;
+    transform:translateX(5px);
+}
+
+.card{
+    background:#f8fafc;
+    padding:18px;
+    border-radius:12px;
+    border:1px solid #e2e8f0;
+    margin-bottom:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table th{
+    background:#1e40af;
+    color:#fff;
+}
+
+table th,
+table td{
+    padding:12px;
+    border:1px solid #cbd5e1;
+}
+
+table tr:hover{
+    background:#eff6ff;
+}
+
+@media(max-width:900px){
+
+    .curriculo{
+        grid-template-columns:1fr;
+    }
+
+    .sidebar{
+        text-align:center;
+    }
+
+}
